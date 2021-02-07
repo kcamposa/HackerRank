@@ -52,12 +52,21 @@ def printDiagonal_3():
 
     long = len(a)
     sumDiagonal_1 = 0
+    sumDiagonal_2 = 0
 
     for i in range(long):
         for j in range(len(a[i])):
-            if i == j:
-                sumDiagonal_1 = sumDiagonal_1 + a[i][j]
+            num = len(a[j])
+            if i == j: # first diagonal
+                sumDiagonal_1 = sumDiagonal_1 + a[i][i]
+        
+        print(i, j)
+
+
+
+
 
     print(sumDiagonal_1)
+    print(sumDiagonal_2)
 
 printDiagonal_3()
