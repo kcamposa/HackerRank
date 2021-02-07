@@ -12,12 +12,12 @@ def printDiagonal_1():
     diagonal_2 = np.asarray(a)
     diagonal_2 = np.fliplr(diagonal_2)
 
-    sumDia_1 = np.trace(diagonal_1) # suma de la diagonal 1
-    sumDia_2 = np.trace(diagonal_2) # suma de la diagonal 2
+    sumDia_1 = np.trace(diagonal_1) # get sum
+    sumDia_2 = np.trace(diagonal_2) # get sum
 
-    result = abs(sumDia_1-sumDia_2)
+    result = abs(sumDia_1-sumDia_2) # abs of sum
 
-    print("result: ", result)
+    print("result: ", result) 
     
 def printDiagonal_2():
     a = [
@@ -26,16 +26,16 @@ def printDiagonal_2():
         [10, 8, -12]
         ]
 
-    suma_diagonalprincipal = 0
-    suma_diagonalsecundaria = 0
+    diagonal_1 = 0
+    diagonal_2 = 0
     n = len(a)-1
 
     for i in range(len(a)):
-        suma_diagonalprincipal = suma_diagonalprincipal + a[i][i]
+        diagonal_1 = diagonal_1 + a[i][i]
                                             
-        suma_diagonalsecundaria = suma_diagonalsecundaria + a[i][n-i]
+        diagonal_2 = diagonal_2 + a[i][n-i]
 
-    dif = abs(suma_diagonalprincipal - suma_diagonalsecundaria)
+    dif = abs(diagonal_1 - diagonal_2)
     
     print(dif)
 
