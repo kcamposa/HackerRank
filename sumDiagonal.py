@@ -44,29 +44,33 @@ def printDiagonal_2(): # manual
 
 def printDiagonal_3():
 
-    a = [
+    b = [
         [11, 2,  4],
         [4,  5,  6],
         [10, 8, -12]
         ]
 
+    a = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [9, 8, 9]
+        ]
+
     long = len(a)
     sumDiagonal_1 = 0
     sumDiagonal_2 = 0
+    contador = long-1
 
     for i in range(long):
         for j in range(len(a[i])):
-            num = len(a[j])
             if i == j: # first diagonal
                 sumDiagonal_1 = sumDiagonal_1 + a[i][i]
+            if j == contador:
+                sumDiagonal_2 = sumDiagonal_2 + a[i][j]
+                contador += -1
         
-        print(i, j)
+    result = abs(sumDiagonal_1-sumDiagonal_2)
 
-
-
-
-
-    print(sumDiagonal_1)
-    print(sumDiagonal_2)
+    print(result)
 
 printDiagonal_3()
