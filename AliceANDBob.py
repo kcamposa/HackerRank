@@ -1,3 +1,4 @@
+# comparate two list at the same time using zip
 def AliceANDBob():
     a = [5, 6, 7]
     b = [3, 6, 10]
