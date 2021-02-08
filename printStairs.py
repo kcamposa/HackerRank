@@ -1,3 +1,11 @@
+# create a stairs
+#
+#             #
+#            ##
+#          ####
+#         #####
+#        ######
+
 def printStairs(n):
     countUp = 1
     countDown = n-1
