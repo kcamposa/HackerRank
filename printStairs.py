@@ -1,5 +1,5 @@
 def printStairs(n):
-    countUp = 0
+    countUp = 1
     countDown = n
 
     while(countUp <= n):
