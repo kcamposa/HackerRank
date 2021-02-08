@@ -1,4 +1,4 @@
-# create a stairs
+# create a stairs with 'count +' and 'count -'
 #
 #             #
 #            ##
