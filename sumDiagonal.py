@@ -1,3 +1,5 @@
+# three different ways to sum the two diagonal in a two dimensional list
+
 import numpy as np
 
 #----------------------------------------------------------------
