@@ -5,6 +5,7 @@
 #          ####
 #         #####
 #        ######
+#
 
 def printStairs(n):
     countUp = 1
