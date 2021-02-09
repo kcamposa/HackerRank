@@ -1,4 +1,7 @@
-# repetitive list, remove repetitive, sorted, find the second sum()
+# Search the second max number in a list
+
+# repetitive list?, remove repetitive, sorted, find the second sum()
+
 def runnerup():
     arr = [5, 51, 55, 67, 5, 89, 100, 101, 77, 66, 5]
     newList = []
