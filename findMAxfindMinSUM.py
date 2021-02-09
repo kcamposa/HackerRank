@@ -7,7 +7,7 @@ def find():
     num = False
     count = 0
 
-    for i in arr:
+    for i in arr: # true o false, if the list has the same value in the positions.
         if i == arr[0]:
             count += 1
         if count == len(arr):
