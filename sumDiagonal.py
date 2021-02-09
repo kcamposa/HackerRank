@@ -1,3 +1,10 @@
+# Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+# For example, the square matrix ARR is shown below:
+# 1 2 3
+# 4 5 6
+# 9 8 9
+# The left-to-right diagonal = 1+5+9 = 15 and The right to left diagonal = 3+5+9=17. Their absolute difference is 15-17=2.
+
 # three different ways to sum the two diagonal in a two dimensional list
 
 import numpy as np
@@ -69,7 +76,7 @@ def printDiagonal_3():
         for j in range(len(a[i])):
             if i == j: # first diagonal
                 sumDiagonal_1 = sumDiagonal_1 + a[i][j]
-            if j == contador:
+            if j == contador: # second diagonal 
                 sumDiagonal_2 = sumDiagonal_2 + a[i][j]
                 contador += -1
         
