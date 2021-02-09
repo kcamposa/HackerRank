@@ -1,6 +1,6 @@
 # repetitive list, remove repetitive, sorted, find the second sum()
 def runnerup():
-    arr = [2, 3, 5, 80, 6, 71, 6, 9, 9, 66, 66, 67, 100]
+    arr = [5, 51, 55, 67, 5, 89, 100, 101, 77, 66, 5]
     newList = []
 
     orderingArr = sorted(arr) # [2, 3, 5, 6, 6]
