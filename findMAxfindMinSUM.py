@@ -13,7 +13,6 @@ def find():
         if count == len(arr):
             num = True
 
-
     if num == False:
         for i in arr:
             maxNumber = max(arr)
