@@ -48,5 +48,14 @@ def Apple_Orange():
 
 def Apple_Orange_1():
 
+    s = 7 # starting point of sam's house 
+    t = 10 # ending location of sam's house
+
+    a = 4 # apple tree
+    b = 12 # orange tree
+
+    apples = [2, 3, -4]
+    oranges = [3, -2, -4]
+
     print(sum([1 for x in apples if (x + a) >= s and (x + a) <= t]))
     print(sum([1 for x in oranges if (x + b) >= s and (x + b) <= t]))
