@@ -45,4 +45,8 @@ def Apple_Orange():
     print(countApples)
     print(countOranges)
 
-Apple_Orange()
+
+def Apple_Orange_1():
+
+    print(sum([1 for x in apples if (x + a) >= s and (x + a) <= t]))
+    print(sum([1 for x in oranges if (x + b) >= s and (x + b) <= t]))
