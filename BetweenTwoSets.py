@@ -20,9 +20,14 @@ a = [2, 6]
 b = [24, 36]
 
 def getTotalX(a, b):
-       
-    print(22)
-    
 
+    maxA = max(a)
+    minB = min(b)
+    count = 0
+    for i in range(maxA, minB+1):
+        if all([i%j==0 for j in a]):
+            if all([j%i==0 for j in b]):
+                count += 1
+    print(count)
 
 getTotalX(a, b)
