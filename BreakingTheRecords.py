@@ -31,6 +31,7 @@ def breakingRecords(scores_):
         if i < min:
             min_count += 1
             min = i
+            
     print(max_count, min_count)
 
 breakingRecords(scores)
