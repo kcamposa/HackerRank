@@ -20,22 +20,11 @@
 
 def NumberLineJumps(x1, v1, x2, v2):
 
-    option = 'YES'
-    ver = False
-
-    count1 = 0
-    count2 = 0
-    while(ver==False):
-
-        kan1 = x1+v1+count1  # 2 2
-        kan2 = x2+v2+count2  # 3 3
-
-        if kan1 == kan2:
-            ver = True
-            print('YES')
-
-        count1 += v1
-        count2 += v2
+    option = "NO"
+    if (x2 - x1) * (v2 - v1) < 0 and (x2 - x1) % (v2 - v1) == 0:
+        option = "YES"
+    
+    return option
 
 
 
