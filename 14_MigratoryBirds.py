@@ -17,7 +17,7 @@ def migratoryBirds_1(arr):
         if arr.count(max_)==5: # numbers same amount
             print(arr[0])
         else:
-            pass
+            pass # working
     else: # only max 1
         for i in range(5):
             if newList[i] == max_:
