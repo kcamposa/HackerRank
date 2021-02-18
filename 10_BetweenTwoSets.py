@@ -10,7 +10,6 @@
 # There are two numbers between the arrays: 6 and 12.
 # 6%2=0, 6%6=0, 24%6=0, 36%6=0 for the first value.
 # 12%2=0, 12%6=0 and 24%12=0, 36%12=0 for the second value. Return 2.
-
 # resume
 # 1. find the LCM of all the integers of array A.
 # 2. find the GCD of all the integers of array B.
