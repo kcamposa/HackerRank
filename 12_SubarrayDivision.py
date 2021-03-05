@@ -1,11 +1,14 @@
-# Given a chocolate bar, two children, Lily and Ron, are determining how to share it. Each of the squares has an integer on it.
-# Lily decides to share a contiguous segment of the bar selected such that:
-# -The length of the segment matches Ron's birth month.
-# -The sum of the integers on the squares is equal to his birth day.
+'''
+ Given a chocolate bar, two children, Lily and Ron, are determining how to share it. Each of the squares has an integer on it.
+ Lily decides to share a contiguous segment of the bar selected such that:
+ -The length of the segment matches Ron's birth month.
+ -The sum of the integers on the squares is equal to his birth day.
 
-#s = [2,2,1,3,2] --> 4,2
-#s = [1,1,1,1,1,1] --> 3,2 
-#s =  [1,2,1,3,2] --> 3,1
+s = [2,2,1,3,2] --> 4,2
+s = [1,1,1,1,1,1] --> 3,2 
+s =  [1,2,1,3,2] --> 3,1
+'''
+
 s = [4]
 d = 4
 m = 1

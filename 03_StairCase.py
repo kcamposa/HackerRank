@@ -1,12 +1,13 @@
-# create a stairs with 'count +' and 'count -'
-#
-#             #
-#            ##
-#          ####
-#         #####
-#        ######
-#
+'''
+ create a stairs with 'count +' and 'count -'
 
+             #
+            ##
+          ####
+         #####
+        ######
+
+'''
 def printStairs(n):
     countUp = 1
     countDown = n-1
