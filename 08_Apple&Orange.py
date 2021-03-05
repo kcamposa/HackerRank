@@ -8,7 +8,6 @@
  -Assume the trees are located on a single point, where the apple tree is at point A, and the orange tree is at point B.
  -When a fruit falls from its tree, it lands D units of distance from its tree of origin along the X-axis. *A negative value of D means the fruit fell D units to the tree's left, 
   and a positive value of D means it falls D units to the tree's right.
-  
 '''
 
 def Apple_Orange():

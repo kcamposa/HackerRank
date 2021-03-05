@@ -7,7 +7,6 @@
  The left-to-right diagonal = 1+5+9 = 15 and The right to left diagonal = 3+5+9=17. Their absolute difference is 15-17=2.
 
  three different ways to sum the two diagonal in a two dimensional list
- 
 '''
 import numpy as np
 

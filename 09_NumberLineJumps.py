@@ -18,7 +18,6 @@
  28 8 96 2 --> NO
  43 5 49 3 --> YES
  21 6 47 3 --> NO 
- 
 '''
 
 def NumberLineJumps(x1, v1, x2, v2):
