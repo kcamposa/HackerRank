@@ -15,6 +15,7 @@ Game  Score  Minimum  Maximum   Min Max
  3      24     10       24       1   1
 
  Given the scores for a season, find and print the number of times Maria breaks her records for most and least points scored during the season.
+ 
 '''
 
 scores = [10, 5, 20, 20, 4, 5, 2, 25, 1] # 2 4

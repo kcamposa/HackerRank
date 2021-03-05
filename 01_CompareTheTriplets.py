@@ -7,7 +7,6 @@
  If a[i] = b[i], then neither person receives a point.
 
  Comparate two list at the same time using zip
-
 '''
 def AliceANDBob():
     a = [5, 6, 7]
