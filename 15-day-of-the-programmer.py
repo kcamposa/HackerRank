@@ -1,11 +1,11 @@
 year = 1500
 
 def dayOfProgrammer(year):
-    if year >= 1700 and year <= 1917:
-        # Julian Calendar
-        print("Julian Calendar", year)
-    elif year >= 1918:
-        # Gregorian Calendar 
-        print("Gregorian Calendar", year)
+    if (year == 1918):
+        return '26.09.1918'
+    elif ((year <= 1917) & (year%4 == 0)) or ((year > 1918) & (year%400 == 0 or ((year%4 == 0) & (year%100 != 0)))):
+        return '12.09.%s' %year
+    else:
+        return '13.09.%s' %year
 
 dayOfProgrammer(year)
