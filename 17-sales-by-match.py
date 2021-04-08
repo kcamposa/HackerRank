@@ -16,8 +16,8 @@ returns int: the number of pairs
 '''
 
 n = 7
-ar = [1, 2, 1, 2, 1, 3, 2]
-#ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+#ar = [1, 2, 1, 2, 1, 3, 2]
+ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
 
 def sockMerchant(n, ar):
 
@@ -31,13 +31,12 @@ def sockMerchant(n, ar):
         #num = ar.count(ns)
         countsNumbers.append(ar.count(ns))
 
+    print(countsNumbers)
+
     for nsP in countsNumbers:
         if nsP > 1 and nsP%2 != 0:
             nsPairs.append(nsP-1)
 
-
-    print(countsNumbers)
-
-
+    print(nsPairs)
 
 sockMerchant(n, ar)
