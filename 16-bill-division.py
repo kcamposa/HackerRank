@@ -15,8 +15,7 @@ bill = [3, 10, 2, 9]
 k = 1
 b = 7
 
-def bonAppetit(bill, k, b): # k = index for removing, b = the amount of money by Anna
-    
+def bonAppetit(bill, k, b):
     bill.remove(bill[k])
     summ = sum(bill)/2
     r = int(b - summ)
