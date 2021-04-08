@@ -22,7 +22,7 @@ def sockMerchant(n, ar):
     numbers = []
     countsNumbers = []
     nsPairs = []
-    [numbers.append(n) for n in ar if n not in numbers] # removing repetitives numbers
+    [numbers.append(n) for n in ar if n not in numbers] # getting not repetitives numbers
     #print(numbers)
 
     for ns in numbers:
