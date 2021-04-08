@@ -31,12 +31,16 @@ def sockMerchant(n, ar):
         #num = ar.count(ns)
         countsNumbers.append(ar.count(ns))
 
-    print(countsNumbers) # [4, 3, 1, 1]
+    #print(countsNumbers) # [4, 3, 1, 1]
 
     for nsP in countsNumbers:
-        if nsP > 1 and nsP%2 != 0:
-            nsPairs.append(nsP-1)
+        nummmmm = nsP%2
+        if nsP > 1 : 
+            if nsP%2 != 0:
+                nsPairs.append(nsP-1)
+            if nsP%2 == 0:
+                nsPairs.append(nsP)
 
-    print(nsPairs)
+    print(nsPairs) # [4, 2]
 
 sockMerchant(n, ar)
