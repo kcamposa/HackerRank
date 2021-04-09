@@ -30,6 +30,5 @@ def countingValleys(n, steps): # 8 UDDDUDUU
             valley += 1
 
     print(valley)
-            
 
 countingValleys(8, 'UDDDUDUU')
