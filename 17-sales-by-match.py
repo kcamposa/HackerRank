@@ -3,12 +3,10 @@ There is a large pile of socks that must be paired by color. Given an array of i
 Example:
 n = 7
 ar = [1, 2, 1, 2, 1, 3, 2]
-
 There is one pair of color 1 and one of color 2. There are three odd socks left, one of each color. The number of pairs is 2.
 Complete the sockMerchant function in the editor below.
 - int n: the number of socks in the pile
 - int ar[n]: the colors of each sock
-
 **returns int: the number of pairs
 '''
 
@@ -18,31 +16,31 @@ ar = [1, 2, 1, 2, 1, 3, 2]
 
 def sockMerchant(n, ar):
 
-    i = 0
+    pairs = 0
     numbers = []
     countsNumbers = []
     nsPairs = []
     [numbers.append(n) for n in ar if n not in numbers] # getting not repetitives numbers
     #print(numbers)
 
-    for ns in numbers:
-        countsNumbers.append(ar.count(ns))
+    for i in numbers:
+        countsNumbers.append(ar.count(i))
 
     #print(countsNumbers) # [4, 3, 1, 1]
 
-    for nsP in countsNumbers:
-        if nsP > 1 : 
-            if nsP%2 != 0:
-                nsPairs.append(nsP-1)
-            if nsP%2 == 0:
-                nsPairs.append(nsP)
+    for j in countsNumbers:
+        if j > 1 : 
+            if j%2 != 0:
+                nsPairs.append(j-1)
+            if j%2 == 0:
+                nsPairs.append(j)
 
     #print(nsPairs) # [4, 2]
 
-    for mun in nsPairs:
-        num = mun // 2
-        i = i + num
+    for k in nsPairs:
+        num = k // 2
+        pairs = pairs + num
 
-    print(i)
+    print(pairs)
 
 sockMerchant(n, ar)
