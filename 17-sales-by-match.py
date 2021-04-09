@@ -31,11 +31,11 @@ def sockMerchant(n, ar):
                 nsPairs.append(j-1)
             if j%2 == 0:
                 nsPairs.append(j)
-
+    
     for k in nsPairs:
         num = k // 2
         pairs = pairs + num
-
+    
     print(pairs)
 
 sockMerchant(n, ar)
