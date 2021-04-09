@@ -10,19 +10,31 @@ drives = [5, 8, 12]
 The person can buy a 40 keyboard + 12 USB drive = 52, or a 50 keyboard + 8 USB drive = 58. Choose the latter as the more expensive option and return 58.
 '''
 
-keyboards = [40, 50, 60]
-drives = [5, 8, 12]
-b = 60
-
+#keyboards = [40, 50, 60]
+#drives = [5, 8, 12]
+#b = 60
+keyboards = [5, 1, 1]
+drives = [4]
+b = 5
 
 def getMoneySpent(keyboards, drives, b):
 
-    [keyboards.remove(i) for i in keyboards if i >= b]
-    [drives.remove(j) for j in drives if j >= b]
+    summ = []
 
+    [keyboards.remove(i) for i in keyboards if i >= b] # [40, 50]
+    [drives.remove(j) for j in drives if j >= b] # [5, 8, 12]
     
+    print('testing')
 
-    #print('hola')
+    for k in keyboards:
+        for x in drives:
+            if (k+x) < b:
+                summ.append(k + x)
 
+    if summ:
+        maxNum = max(summ)
+        print(maxNum)
+    else:
+        print(-1)
 
 getMoneySpent(keyboards, drives, b)
