@@ -20,13 +20,10 @@ def sockMerchant(n, ar):
     numbers = []
     countsNumbers = []
     nsPairs = []
+
     [numbers.append(n) for n in ar if n not in numbers] # getting not repetitives numbers
-    #print(numbers)
 
-    for i in numbers:
-        countsNumbers.append(ar.count(i))
-
-    #print(countsNumbers) # [4, 3, 1, 1]
+    [countsNumbers.append(ar.count(i)) for i in numbers] # getting the amount of each number
 
     for j in countsNumbers:
         if j > 1 : 
@@ -34,8 +31,6 @@ def sockMerchant(n, ar):
                 nsPairs.append(j-1)
             if j%2 == 0:
                 nsPairs.append(j)
-
-    #print(nsPairs) # [4, 2]
 
     for k in nsPairs:
         num = k // 2
