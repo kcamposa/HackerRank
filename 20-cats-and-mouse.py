@@ -21,5 +21,12 @@ away while the other is 2 units away. Return "Cat B".
 - X = cat A's position
 - Y = cat B's position
 - Z = mouse C's position
-
 '''
+
+
+
+def catAndMouse(x, y, z):
+    print('testing')
+
+
+catAndMouse(x, y, z)
