@@ -24,8 +24,8 @@ away while the other is 2 units away. Return "Cat B".
 '''
 
 x=1
-y=3
-z=2
+y=2
+z=3
 
 
 def catAndMouse(x, y, z):
@@ -33,10 +33,20 @@ def catAndMouse(x, y, z):
     catACounter = 0
     catBCounter = 0
 
-    for i in range(x, z):
-        catACounter+=1
-    for j in range(y, z):
-        catBCounter+=1
+    if x > z:
+        for i in range(x, z):
+            catACounter+=1
+    elif x < z:
+        if x > z:
+            catACounter -=1
+
+    if y > z:
+        for j in range(y, z):
+            catBCounter+=1
+    elif y < z:
+        if x > z:
+            catBCounter -=1
+
 
     if catACounter > catBCounter:
         print('Cat B')
