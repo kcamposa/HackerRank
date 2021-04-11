@@ -15,6 +15,11 @@ x = 2
 y = 5
 z = 4
 
+The cats are at positions 2 (Cat A) and 5 (Cat B), and the mouse is at position 4. Cat B, at position 5 will arrive first since it is only 1 unit 
+away while the other is 2 units away. Return "Cat B".
 
+- X = cat A's position
+- Y = cat B's position
+- Z = mouse C's position
 
 '''
