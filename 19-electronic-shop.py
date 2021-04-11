@@ -28,13 +28,12 @@ def getMoneySpent(keyboards, drives, b):
 
     for k in keyboards:
         for x in drives:
-            if (k+x) < b:
+            if (k+x) <= b:
                 summ.append(k + x)
 
-    if summ:
-        maxNum = max(summ)
-        print(maxNum)
-    else:
+    if not summ:
         print(-1)
+    else:
+        print(max(summ))
 
 getMoneySpent(keyboards, drives, b)
