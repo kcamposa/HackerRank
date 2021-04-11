@@ -24,12 +24,10 @@ def getMoneySpent(keyboards, drives, b):
     [keyboards.remove(i) for i in keyboards if i >= b] # [40, 50]
     [drives.remove(j) for j in drives if j >= b] # [5, 8, 12]
     
-    print('testing')
-
     for k in keyboards:
         for x in drives:
             if (k+x) <= b:
-                summ.append(k + x)
+                summ.append(k+x)
 
     if not summ:
         print(-1)
