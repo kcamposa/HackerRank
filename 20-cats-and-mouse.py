@@ -23,9 +23,9 @@ away while the other is 2 units away. Return "Cat B".
 - Z = mouse C's position
 '''
 
-x=1
-y=2
-z=3
+x=7
+y=9
+z=4
 
 
 def catAndMouse(x, y, z):
@@ -33,20 +33,23 @@ def catAndMouse(x, y, z):
     catACounter = 0
     catBCounter = 0
 
-    if x > z:
+    if z > x and z < y:
         for i in range(x, z):
             catACounter+=1
-    elif x < z:
-        if x > z:
-            catACounter -=1
-
-    if y > z:
+        for j in range(z, y):
+            catBCounter+=1
+    
+    if z > x and z > y:
+        for i in range(x, z):
+            catACounter+=1
         for j in range(y, z):
             catBCounter+=1
-    elif y < z:
-        if x > z:
-            catBCounter -=1
 
+    if z < x and z < y:
+        for i in range(z, x):
+            catACounter+=1
+        for j in range(z, y):
+            catBCounter+=1
 
     if catACounter > catBCounter:
         print('Cat B')
@@ -55,7 +58,11 @@ def catAndMouse(x, y, z):
     else:
         print('Mouse C')
     
-    
+def catAndMouse_2(x, y, z):
+    a = abs(x-z)
+    b = abs(y-z)
+        
+    return "Cat A" if a<b else "Cat B" if b<a else "Mouse C"
 
 
 catAndMouse(x, y, z)
