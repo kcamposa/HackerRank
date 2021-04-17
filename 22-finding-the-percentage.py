@@ -7,7 +7,6 @@ Example:
 query_name = 'beta'
 
 beta = 30+50+70/3 = 50.0
-
 '''
 
 def findingThePercentage():
