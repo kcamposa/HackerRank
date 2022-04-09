@@ -30,7 +30,8 @@ def designerPdfViewer(h, word):
         num = alphabet.index(w) # 19 14 17 13
         nums.append(h[num])
 
-    res = max(nums) * int(len(word))
-    print(res) # change for return 
+    res = max(nums) * len(word)
+    print(res) # change for return
+    print(type(len(word)))
 
 designerPdfViewer(h, word)
