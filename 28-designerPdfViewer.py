@@ -32,6 +32,5 @@ def designerPdfViewer(h, word):
 
     res = max(nums) * len(word)
     print(res) # change for return
-    print(type(len(word)))
 
 designerPdfViewer(h, word)
