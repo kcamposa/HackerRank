@@ -22,7 +22,6 @@ h = [1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 
 word = "zaba"
 # output 28
 
-
 def designerPdfViewer(h, word):
 
     alp = 'abcdefghijklmnopqrstuvwxyz'
