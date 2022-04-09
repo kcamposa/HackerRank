@@ -13,11 +13,11 @@ The heights are t=2. o=1, r=1 and n=1. The tallest letter is 2 high and there ar
 '''
 
 
-#    a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+#     a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
 #h = [1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
 #word = "abc"
 
-#   a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+#    a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
 h = [1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7]
 word = "zaba"
 # output 28
@@ -25,7 +25,7 @@ word = "zaba"
 
 def designerPdfViewer(h, word):
 
-    alp = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    alp = 'abcdefghijklmnopqrstuvwxyz'
     
     nums = []
     for w in word:
@@ -33,6 +33,6 @@ def designerPdfViewer(h, word):
         nums.append(h[num])
 
     res = max(nums) * int(len(word))
-    print(res)
+    print(res) # change for return 
 
 designerPdfViewer(h, word)
