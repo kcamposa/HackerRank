@@ -24,11 +24,11 @@ word = "zaba"
 
 def designerPdfViewer(h, word):
 
-    alp = 'abcdefghijklmnopqrstuvwxyz'
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
     
     nums = []
     for w in word:
-        num = alp.index(w) # 19 14 17 13
+        num = alphabet.index(w) # 19 14 17 13
         nums.append(h[num])
 
     res = max(nums) * int(len(word))
