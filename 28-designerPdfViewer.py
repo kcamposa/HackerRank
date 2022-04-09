@@ -20,7 +20,7 @@ The heights are t=2. o=1, r=1 and n=1. The tallest letter is 2 high and there ar
 #   a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
 h = [1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7]
 word = "zaba"
-
+# output 28
 
 
 def designerPdfViewer(h, word):
