@@ -5,11 +5,7 @@ Arrival times go from on time (arrivalTime <= 0) to arrieved late (arrivalTime >
 
 Given the arrival time of each student and a threshhold number of attendees, determine if the class is cancelled.
 
-
-
-
 """
-
 
 def angryProfessor(k, a):
     count = 0
